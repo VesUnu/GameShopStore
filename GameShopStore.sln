@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShopStore.Infrastructur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShopStore.Core", "GameShopStore.Core\GameShopStore.Core.csproj", "{609D6E17-A502-4A56-8A46-EE88D7E21EFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameShopStore.Application", "GameShopStore.Application\GameShopStore.Application.csproj", "{2512E26A-09BF-49A5-84C4-BC1AD1BE1844}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{609D6E17-A502-4A56-8A46-EE88D7E21EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{609D6E17-A502-4A56-8A46-EE88D7E21EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{609D6E17-A502-4A56-8A46-EE88D7E21EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2512E26A-09BF-49A5-84C4-BC1AD1BE1844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2512E26A-09BF-49A5-84C4-BC1AD1BE1844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2512E26A-09BF-49A5-84C4-BC1AD1BE1844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2512E26A-09BF-49A5-84C4-BC1AD1BE1844}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
