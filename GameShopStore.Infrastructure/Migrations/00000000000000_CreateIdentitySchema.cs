@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace GameShopStore.Data.Migrations
+namespace GameShopStore.Infrastructure.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

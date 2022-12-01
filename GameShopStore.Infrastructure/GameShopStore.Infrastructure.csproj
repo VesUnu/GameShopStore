@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\" />
-    <Folder Include="Migration\" />
-    <Folder Include="Extensions\" />
+    <Folder Include="Configs\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Extensions\" />
     <Folder Include="Identity\" />
+    <Folder Include="SeedData\" />
     <Folder Include="Repos\" />
   </ItemGroup>
 
