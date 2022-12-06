@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameShopStore.Application.Basket
 {
-    public class AddProductBasket
+    public class AddProductBasket : IAdd
     {
 
     }
