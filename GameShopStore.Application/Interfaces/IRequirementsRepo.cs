@@ -1,0 +1,15 @@
+﻿using GameShopStore.Core.Dtos.RequirementsDtos;
+using GameShopStore.Core.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GameShopStore.Application.Interfaces
+{
+    public interface IRequirementsRepo : IBaseRepository<Requirements>
+    {
+        Task<EditingRequirementsDto> GetRequirementsForProductAsync(int id);
+    }
+}
