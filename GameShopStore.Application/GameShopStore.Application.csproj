@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Stripe\" />
-    <Folder Include="StockManipulations\" />
   </ItemGroup>
 
 </Project>
