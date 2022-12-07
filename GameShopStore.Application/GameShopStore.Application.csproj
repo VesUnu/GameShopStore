@@ -21,7 +21,6 @@
   <ItemGroup>
     <Folder Include="Stripe\" />
     <Folder Include="StockManipulations\" />
-    <Folder Include="Pictures\" />
   </ItemGroup>
 
 </Project>
