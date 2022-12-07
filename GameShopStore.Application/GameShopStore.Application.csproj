@@ -18,8 +18,4 @@
     <ProjectReference Include="..\GameShopStore.Core\GameShopStore.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Stripe\" />
-  </ItemGroup>
-
 </Project>
