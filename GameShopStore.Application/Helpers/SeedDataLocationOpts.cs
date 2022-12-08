@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameShopStore.Application.Helpers
 {
-    public class SeedDataLocation
+    public class SeedDataLocationOpts
     {
         public const string SeedDataLoc = "SeedDataLocation";
 
