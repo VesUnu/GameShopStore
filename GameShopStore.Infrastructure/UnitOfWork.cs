@@ -1,4 +1,7 @@
 ﻿using GameShopStore.Application.Interfaces;
+using GameShopStore.Core.Models;
+using GameShopStore.Infrastructure.Repos;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,13 +24,177 @@ namespace GameShopStore.Infrastructure
         {
             get
             {
-                if (_requirements = null)
+                if (_requirements == null)
                 {
-                    _requirements = new RequirementsRepo(_appDbCtx)
+                    _requirements = new RequirementsRepo(_appDbCtx);
                 }
 
                 return _requirements;
             }
+        }
+
+        private ICategoryRepo _category;
+        public ICategoryRepo Category
+        {
+            get
+            {
+                if (_category == null)
+                {
+                    _category = new CategoryRepo(_appDbCtx);
+                }
+                return _category;
+            }
+        }
+
+        private ISubCategoryRepo _subCategory;
+        public ISubCategoryRepo SubCategory
+        {
+            get
+            {
+                if (_subCategory == null)
+                {
+                    _subCategory = new SubCategoryRepo(_appDbCtx);
+                }
+                return _subCategory;
+            }
+        }
+
+        private ILanguageRepo _language;
+        public ILanguageRepo Language 
+        {
+            get
+            {
+                if (_language == null)
+                {
+                    _language = new LanguageRepo(_appDbCtx);
+                }
+
+                return _language;
+            }
+        }
+
+        private IPictureRepo _picture;
+        public IPictureRepo Picture 
+        {
+            get
+            {
+                if (_picture == null)
+                {
+                    _picture = new PictureRepo(_appDbCtx);
+                }
+                return _picture;
+
+            }
+        }
+
+        private IUserRepo _user;
+        public IUserRepo User 
+        {
+            get
+            {
+                if (_user == null)
+                {
+                    _user = new UserRepo(_appDbCtx);
+                }
+                return _user;
+            }
+        }
+
+        private IProductRepo _product;
+        public IProductRepo Product 
+        {
+            get
+            {
+                if (_product == null)
+                {
+                    _product = new ProductRepo(_appDbCtx);
+                }
+                return _product;
+            }
+        }
+
+        private IStockRepo _stock;
+        public IStockRepo Stock 
+        {
+            get
+            {
+                if (_stock == null)
+                {
+                    _stock = new StockRepository(_appDbCtx);
+                }
+                return _stock;
+            }
+        }
+
+        private IOrderRepo _order;
+        public IOrderRepo Order 
+        {
+            get
+            {
+                if (_order == null)
+                {
+                    _order = new OrderRepo(_appDbCtx);
+                }
+                return _order;
+            }
+        }
+
+        private IStockOnHoldRepo _stockOnHold;
+        public IStockOnHoldRepo StockOnHold 
+        {
+            get
+            {
+                if (_stockOnHold == null)
+                {
+                    _stockOnHold = new StockOnHoldRepo(_appDbCtx);
+                }
+                return _stockOnHold;
+            }
+        }
+
+        private IAddressRepo _address;
+        public IAddressRepo Address 
+        {
+            get
+            {
+                if (_address == null)
+                {
+                    _address = new AddressRepo(_appDbCtx);
+                }
+                return _address;
+            }
+        }
+
+        private IDeliveryRepo _deliveryOpt;
+        public IDeliveryRepo DeliveryOpt 
+        {
+            get
+            {
+                if (_deliveryOpt == null)
+                {
+                    _deliveryOpt = new DeliveryOptionRepo(_appDbCtx);
+                }
+                return _deliveryOpt;
+            }
+        }
+        public async Task<bool> SaveAsync()
+        {
+            return await _appDbCtx.SaveChangesAsync() > 0;
+        }
+
+        public bool IsAnyEntityModified()
+        {
+            return _appDbCtx.ChangeTracker.Entries().Any(x => x.State == EntityState.Modified);
+        }
+
+        public bool IsAnyEntityAdded()
+        {
+            return _appDbCtx.ChangeTracker.Entries().Any(x => x.State == EntityState.Added);
+        }
+
+        public bool IsAnyEntityDeleted()
+        {
+            return _appDbCtx.ChangeTracker.Entries().Any(x => x.State.Equals(EntityState.Deleted));
         }
     }
 }
