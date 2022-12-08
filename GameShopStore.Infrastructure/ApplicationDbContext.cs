@@ -17,5 +17,21 @@ namespace GameShopStore.Infrastructure
         {
             _seedDataOptions = seedDataOptions;
         }
+
+        public DbSet<Picture> Pictures { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Requirements> Requirements { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<SubCategory> SubCategories { get; set; }
+        public DbSet<Language> Languages { get; set; }
+        public DbSet<CategorySubCategory> CategoriesSubCategories { get; set; }
+        public DbSet<ProductSubCategory> ProductsSubCategories { get; set; }
+        public DbSet<ProductLanguage> ProductsLanaguages { get; set; }
+        public DbSet<Stock> Stocks { get; set; }
+        public DbSet<OrderStock> OrderStocks { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<StockOnHold> StockOnHolds { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<DeliveryOpt> DeliveryOpts { get; set; }
     }
 }

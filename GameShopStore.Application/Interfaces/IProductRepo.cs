@@ -13,14 +13,14 @@ namespace GameShopStore.Application.Interfaces
 {
     public interface IProductRepo : IBaseRepository<Product>
     {
-        Task<PagedList<ProductModerationDto>> GetProductsForModerationAsync(ProductParameters productParams);
-        Task<PagedList<ProductSearchDto>> GetProductsForSearchingAsync(ProductParameters productParams);
-        Task<Product> ScaffoldProductForCreationAsync(ProductCreationDto productForCreationDto, Requirements requirements, Category selectedCategory);
+        Task<PagedList<ProductModerationDto>> GetProductsForModerationAsync(ProductParameters productParameters);
+        Task<PagedList<ProductSearchDto>> GetProductsForSearchingAsync(ProductParameters productParameters);
+        Task<Product> ScaffoldProductForCreationAsync(ProductCreationDto productCreationDto, Requirements requirements, Category selectedCategory);
         Task<Product> ScaffoldProductForEditAsync(int id, ProductEditDto productToEditDto, Requirements requirements, Category selectedCategory, Product productFromDb);
         Task<Product> GetWithPicturesOnly(int productId);
-        Task<EditingProductDto> GetProductToEditAsync(EditingRequirementsDto requirements, IEnumerable<Picture> photosFromRepo, int id);
+        Task<EditingProductDto> GetProductToEditAsync(EditingRequirementsDto requirements, IEnumerable<Picture> picturesFromRepo, int id);
         Task<Product> GetWithStockOnlyAsync(int productId);
         Task<List<ProductForBasketDto>> GetProductsForBasketAsync(List<ProductFromBasketCookieDto> basketCookie);
-        Task<PagedList<ProductStockModerationDto>> GetProductsForStockModeration(ProductParameters productParams);
+        Task<PagedList<ProductStockModerationDto>> GetProductsForStockModeration(ProductParameters productParameters);
     }
 }
