@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Name": "Stealth",
+    "Description": "Stealth Description"
+  },
+  {
+    "Id": 2,
+    "Name": "FPS",
+    "Description": "FPS Description"
+  },
+  {
+    "Id": 3,
+    "Name": "Horror",
+    "Description": "Horror Description"
+  },
+  {
+    "Id": 4,
+    "Name": "Open-world",
+    "Description": "Open-world Description"
+  },
+  {
+    "Id": 5,
+    "Name": "RTS",
+    "Description": "RTS Description"
+  },
+  {
+    "Id": 6,
+    "Name": "Racing",
+    "Description": "Racing Description"
+  },
+  {
+    "Id": 7,
+    "Name": "Adventure",
+    "Description": "Adventure Description"
+  },
+  {
+    "Id": 8,
+    "Name": "Simulator",
+    "Description": "Simulator Description"
+  }
+]

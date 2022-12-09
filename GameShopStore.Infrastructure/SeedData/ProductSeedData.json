@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "Description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City - a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.\r\n",
+    "IsDigitalMedia": true,
+    "Price": 59.99,
+    "Name": "Cyberpunk 2077",
+    "Pegi": 18,
+    "ReleaseDate": "2020-12-10",
+    "CategoryId": 7
+  },
+  {
+    "Id": 2,
+    "Description": "Lead the Industrial Revolution! Welcome to the dawn of the Industrial Age. The path you choose will define your world. Are you an innovator or an exploiter? A conqueror or a liberator? How the world remembers your name is up to you.\r\n",
+    "IsDigitalMedia": true,
+    "Price": 59.99,
+    "Name": "Anno 1800",
+    "Pegi": 12,
+    "ReleaseDate": "2019-04-01",
+    "CategoryId": 8
+  },
+  {
+    "Id": 3,
+    "Description": "Experience survival horror like never before in the 8th major installment in the Resident Evil franchise - Resident Evil Village. With detailed graphics, intense first-person action and masterful storytelling, the terror has never felt more realistic.\r\n",
+    "IsDigitalMedia": true,
+    "Price": 39.99,
+    "Name": "Resident Evil Village",
+    "Pegi": 18,
+    "ReleaseDate": "2021-05-07",
+    "CategoryId": 3
+  },
+  {
+    "Id": 4,
+    "Description": "Experience the excitement of the biggest tournament in football with EA SPORTS FIFA 23 and the men's FIFA World Cup update, available on November 9 at no additiona cost!\r\n",
+    "IsDigitalMedia": true,
+    "Price": 69.99,
+    "Name": "FIFA 23",
+    "Pegi": 3,
+    "ReleaseDate": "2022-09-30",
+    "CategoryId": 8
+  },
+  {
+    "Id": 5,
+    "Description": "Winner of over 175 Game of the Year Awards and recipient of over 250 perfect scores, RDR2 is the epic tale of outlaw Arthur Morgan and the infamous Van der Linde gang, on the run across America at the dawn of the modern age. Also includes access to the shared living world of Red Dead Online.\r\n",
+    "IsDigitalMedia": true,
+    "Price": 55.15,
+    "Name": "Red Dead Redemption 2",
+    "Pegi": 18,
+    "ReleaseDate": "2019-12-05",
+    "CategoryId": 4
+  },
+  {
+    "Id": 6,
+    "Description": "Dynamic seasons change everything at the world’s greatest automotive festival. Go it alone or team up with others to explore beautiful and historic Britain in a shared open world.\r\n",
+    "IsDigitalMedia": false,
+    "Price": 31.99,
+    "Name": "Forza Horizon 4",
+    "Pegi": 12,
+    "ReleaseDate": "2017-08-21",
+    "CategoryId": 6
+  },
+  {
+    "Id": 7,
+    "Description": "Cloud Strife, an ex-SOLDIER operative, descends on the mako-powered city of Midgar. The world of the timeless classic FINAL FANTASY VII is reborn, using cutting-edge graphics technology, a new battle system and an additional adventure featuring Yuffie Kisaragi.\r\n",
+    "IsDigitalMedia": true,
+    "Price": 40.59,
+    "Name": "Final Fantasy VII Remake Integrade",
+    "Pegi": 16,
+    "ReleaseDate": "2022-06-17",
+    "CategoryId": 7
+  },
+  {
+    "Id": 8,
+    "Description": "Infiltrate terrorists' positions, acquire critical intelligence by any means necessary, execute with extreme prejudice, and exit without a trace! You are Sam Fisher, a highly trained secret operative of the NSA's secret arm: Third Echelon.\r\n",
+    "IsDigitalMedia": false,
+    "Price": 6.99,
+    "Name": "Tom Clancy's Splinter Cell",
+    "Pegi": 12,
+    "ReleaseDate": "2003-02-18",
+    "CategoryId": 1
+  },
+  {
+    "Id": 9,
+    "Description": "Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.\r\n",
+    "IsDigitalMedia": true,
+    "Price": 6.99,
+    "Name": "Grand Theft Auto V",
+    "Pegi": 18,
+    "ReleaseDate": "2015-04-15",
+    "CategoryId": 4
+  }
+]

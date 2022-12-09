@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "name": "DHL",
+    "price": 4.55,
+    "currency": "$",
+    "description": "Today, DHL is the world's leading logistics company. Our 380,000 people in over 200 countries and territories work very day to help you cross borders, reach new markets and grow your business. Or simply send a letter to your loved ones."
+  },
+  {
+    "Id": 2,
+    "name": "SPEEDY",
+    "price": 5.10,
+    "currency": "$",
+    "description": "Speedy is among the largest companies in the Bulgarian market of courier services with a market share of over 33%. The company was founded in 1998 and has grown since to a corporate structure with more than 3000 employees and partners and more than 1700 delivery vehicles."
+  },
+  {
+    "Id": 3,
+    "name": "FedEx",
+    "price": 5.50,
+    "currency": "$",
+    "description": "Connecting people with goods, services and ideas creates opportunities and improves lives. At FedEx, we believe that a connected world is a better world, and that belief guides everything we do."
+  },
+  {
+    "Id": 4,
+    "name": "DIGITAL_PRODUCT",
+    "price": 4.80,
+    "currency": "$",
+    "description": "For more than 20 years, we have been growing and developing so that we are useful to you. Since its founding in 1993, Econt has established as an expert in logistics in Bulgaria. Drive by our desire to offer added value, we are constantly providing you and your business with new and better solutions in the realm of logistics and payment services."
+  }
+]

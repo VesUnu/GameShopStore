@@ -1,0 +1,73 @@
+[
+  {
+    "Username": "Pesho",
+    "Password": "password",
+    "Email": "peshoman@abv.bg",
+    "Created": "2019-01-15",
+    "LastActive": "2022-11-05"
+  },
+  {
+    "Username": "Gosho",
+    "Password": "password",
+    "Email": "gosho66@abv.bg",
+    "Created": "2019-01-18",
+    "LastActive": "2022-11-18"
+  },
+  {
+    "Username": "Dancho",
+    "Password": "password",
+    "Email": "danchogochev@abv.bg",
+    "Created": "2021-03-15",
+    "LastActive": "2021-10-26"
+  },
+  {
+    "Username": "Maria",
+    "Password": "password",
+    "Email": "mariapetrova@abv.bg",
+    "Created": "2022-01-03",
+    "LastActive": "2022-12-03"
+  },
+  {
+    "Username": "Kircho",
+    "Password": "password",
+    "Email": "kirchooktopoda@abv.bg",
+    "Created": "2019-03-26",
+    "LastActive": "2021-12-27"
+  },
+
+  {
+    "Username": "Martin",
+    "Password": "password",
+    "Email": "marto221@abv.bg",
+    "Created": "2019-02-01",
+    "LastActive": "2022-11-17"
+  },
+  {
+    "Username": "Ivan",
+    "Password": "password",
+    "Email": "ivanplamenov@abv.bg",
+    "Created": "2020-06-14",
+    "LastActive": "2022-10-05"
+  },
+  {
+    "Username": "Anastasia",
+    "Password": "password",
+    "Email": "anastasiapetrova@abv.bg",
+    "Created": "2022-05-25",
+    "LastActive": "2022-12-05"
+  },
+  {
+    "Username": "Dimitrichko",
+    "Password": "password",
+    "Email": "dimitrickosmssa@abv.bg",
+    "Created": "2020-03-28",
+    "LastActive": "2021-11-28"
+  },
+  {
+    "Username": "Asen",
+    "Password": "password",
+    "Email": "asenalexandrov@abv.bg",
+    "Created": "2021-07-22",
+    "LastActive": "2022-11-21"
+  }
+]

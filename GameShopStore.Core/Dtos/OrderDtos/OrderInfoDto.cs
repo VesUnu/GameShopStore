@@ -40,7 +40,7 @@ namespace GameShopStore.Core.Dtos.OrderDtos
         [StringLength(40)]
         public string Country { get; set; }
 
-        [DeliveryType("DHL", "SPEEDY", "DPD", "INPOST")]
+        [DeliveryType("DHL", "SPEEDY", "FedEx", "Econt")]
         public string DeliveryType { get; set; }
     }
 }
