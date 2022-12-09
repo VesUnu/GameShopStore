@@ -1,4 +1,7 @@
 ﻿using AutoMapper;
+using GameShopStore.Application.Interfaces;
+using GameShopStore.Core.Dtos.AddressDtos;
+using GameShopStore.Filters;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GameShopStore.Controllers
@@ -22,7 +25,7 @@ namespace GameShopStore.Controllers
         {
             var address = await _unitOfWork.Address.FindAsync(a => a.Id == id && a.UserId == userId);
 
-            if (address = null)
+            if (address == null)
             {
                 return NotFound();
             }
@@ -36,7 +39,7 @@ namespace GameShopStore.Controllers
         {
             var addresses = await _unitOfWork.Address.FindAllAsync(x => x.UserId == userId);
 
-            var addressesToReturn = _mapper.Map<IEnumerable<UserAddressesForListDto>>(addresses);
+            var addressesToReturn = _mapper.Map<IEnumerable<UserAddressListDto>>(addresses);
 
             if (!addresses.Any())
             {
@@ -47,7 +50,7 @@ namespace GameShopStore.Controllers
         }
 
         [HttpDelete("delete/{id}/user/{userId}")]
-        [AdminOrUserWithSameIdFilter("userId")]
+        [AdminOrUserWithSameUserIdFilter("userId")]
         public async Task<IActionResult> DeleteAddress(int id, int userId)
         {
             var address = await _unitOfWork.Address.FindAsync(a => a.Id == id && a.UserId == userId);
