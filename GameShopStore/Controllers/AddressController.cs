@@ -8,7 +8,7 @@ namespace GameShopStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class AddressController : Controller
+    public class AddressController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
