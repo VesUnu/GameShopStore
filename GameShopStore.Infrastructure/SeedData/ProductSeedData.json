@@ -7,7 +7,7 @@
     "Name": "Cyberpunk 2077",
     "Pegi": 18,
     "ReleaseDate": "2020-12-10",
-    "CategoryId": 7
+    "CategoryId": 2
   },
   {
     "Id": 2,
@@ -17,7 +17,7 @@
     "Name": "Anno 1800",
     "Pegi": 12,
     "ReleaseDate": "2019-04-01",
-    "CategoryId": 8
+    "CategoryId": 1
   },
   {
     "Id": 3,
@@ -27,7 +27,7 @@
     "Name": "Resident Evil Village",
     "Pegi": 18,
     "ReleaseDate": "2021-05-07",
-    "CategoryId": 3
+    "CategoryId": 2
   },
   {
     "Id": 4,
@@ -37,7 +37,7 @@
     "Name": "FIFA 23",
     "Pegi": 3,
     "ReleaseDate": "2022-09-30",
-    "CategoryId": 8
+    "CategoryId": 3
   },
   {
     "Id": 5,
@@ -47,7 +47,7 @@
     "Name": "Red Dead Redemption 2",
     "Pegi": 18,
     "ReleaseDate": "2019-12-05",
-    "CategoryId": 4
+    "CategoryId": 3
   },
   {
     "Id": 6,
@@ -57,7 +57,7 @@
     "Name": "Forza Horizon 4",
     "Pegi": 12,
     "ReleaseDate": "2017-08-21",
-    "CategoryId": 6
+    "CategoryId": 2
   },
   {
     "Id": 7,
@@ -67,7 +67,7 @@
     "Name": "Final Fantasy VII Remake Integrade",
     "Pegi": 16,
     "ReleaseDate": "2022-06-17",
-    "CategoryId": 7
+    "CategoryId": 1
   },
   {
     "Id": 8,
@@ -87,6 +87,6 @@
     "Name": "Grand Theft Auto V",
     "Pegi": 18,
     "ReleaseDate": "2015-04-15",
-    "CategoryId": 4
+    "CategoryId": 2
   }
 ]
