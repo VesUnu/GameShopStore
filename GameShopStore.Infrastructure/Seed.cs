@@ -13,7 +13,7 @@ namespace GameShopStore.Infrastructure
         {
             if (!userManager.Users.Any())
             {
-                var seedDataLocation = appSettings.GetSection(SeedDataLocationOpts.SeedDataLoc).Get<SeedDataLocationOpts>();
+                var seedDataLocation = appSettings.GetSection(SeedDataLocationOpts.SeedDataLocation).Get<SeedDataLocationOpts>();
                 var currDirectory = Directory.GetCurrentDirectory();
 
                 string userData;
@@ -22,7 +22,7 @@ namespace GameShopStore.Infrastructure
                 {
                     var userSeedDataLocation = seedDataLocation.UserSeedData;
 
-                    var testProjectDirectory = Directory.GetParent(currDirectory).Parent.Parent.Parent.FullName;
+                    var testProjectDirectory = Directory.GetParent(currDirectory).Parent!.Parent!.Parent!.FullName;
 
                     var combined = Path.GetFullPath(Path.Combine(testProjectDirectory, userSeedDataLocation));
 
@@ -31,7 +31,7 @@ namespace GameShopStore.Infrastructure
                 }
                 else
                 {
-                    userData = System.IO.File.ReadAllText("../GameShopStore.Infrastructure/SeedDataS/UserSeedData.json");
+                    userData = System.IO.File.ReadAllText("../GameShopStore.Infrastructure/SeedData/UserSeedData.json");
                     users = JsonConvert.DeserializeObject<List<User>>(userData);
                 }
 
@@ -50,7 +50,7 @@ namespace GameShopStore.Infrastructure
                 }
 
 
-                foreach (var user in users)
+                foreach (var user in users!)
                 {
                     userManager.CreateAsync(user, "password").Wait();
                     userManager.AddToRoleAsync(user, "Customer").Wait();

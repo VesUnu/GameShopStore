@@ -33,4 +33,8 @@
     <ProjectReference Include="..\GameShopStore.Infrastructure\GameShopStore.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ClientApp\" />
+  </ItemGroup>
+
 </Project>

@@ -3,11 +3,13 @@ using GameShopStore.Core.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using System.IO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
 
 namespace GameShopStore.Infrastructure.Extensions
 {
@@ -21,7 +23,7 @@ namespace GameShopStore.Infrastructure.Extensions
 
             var currDirectory = Directory.GetCurrentDirectory();
 
-            List<Product> products = ModelBuilderExtension.GetSeedDataOf<Product>(currDirectory, productSeedDataLocation);
+            List<Product> products = GetSeedDataOf<Product>(currDirectory, productSeedDataLocation);
 
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "PC", Description = "PC Description" },
@@ -51,7 +53,7 @@ namespace GameShopStore.Infrastructure.Extensions
                 new Language { Id = 4, Name = "Russian" },
                 new Language { Id = 5, Name = "French" },
                 new Language { Id = 6, Name = "Italian" },
-                new Language { Id = 7, Name = "Spanish"}
+                new Language { Id = 7, Name = "Spanish" }
             );
             modelBuilder.Entity<ProductLanguage>().HasData(
                 new ProductLanguage { ProductId = 1, LanguageId = 1 },
@@ -142,21 +144,22 @@ namespace GameShopStore.Infrastructure.Extensions
             modelBuilder.Entity<DeliveryOpt>().HasData(deliveryOpts);
         }
 
+
         public static List<T> GetSeedDataOf<T>(string currDirectory, string seedDataLocationSource)
         {
             string seedDataAsJson;
             List<T> seedToReturn = new List<T>();
             if (!currDirectory.Contains("GameShopStore"))
             {
-                var testProjectDirectory = Directory.GetParent(currDirectory).Parent.Parent.Parent.FullName;
+                var testProjectDirectory = Directory.GetParent(currDirectory).Parent!.Parent!.Parent!.FullName;
                 var combined = Path.GetFullPath(Path.Combine(testProjectDirectory, seedDataLocationSource));
 
-                seedDataAsJson = System.IO.File.ReadAllText(combined);
+                seedDataAsJson = File.ReadAllText(combined);
                 seedToReturn = JsonConvert.DeserializeObject<List<T>>(seedDataAsJson);
             }
             else
             {
-                seedDataAsJson = System.IO.File.ReadAllText("../" + seedDataLocationSource);
+                seedDataAsJson = File.ReadAllText("../" + seedDataLocationSource);
                 seedToReturn = JsonConvert.DeserializeObject<List<T>>(seedDataAsJson);
             }
             return seedToReturn;
