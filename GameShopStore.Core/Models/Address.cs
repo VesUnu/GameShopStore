@@ -9,17 +9,17 @@ namespace GameShopStore.Core.Models
     public class Address
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string SurName { get; set; }
-        public string Street { get; set; }
-        public string PostCode { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public string City { get; set; }
-        public string Country { get; set; }
+        public string Name { get; set; } = null!;
+        public string SurName { get; set; } = null!;
+        public string Street { get; set; } = null!;
+        public string PostCode { get; set; } = null!;
+        public string Phone { get; set; } = null!;
+        public string Email { get; set; } = null!;
+        public string City { get; set; } = null!;
+        public string Country { get; set; } = null!;
 
 
-        public User User { get; set; }
+        public User User { get; set; } = null!;
         public int UserId { get; set; }
     }
 }

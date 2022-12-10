@@ -8,9 +8,9 @@ namespace GameShopStore.Core.Models
 {
     public class ProductLanguage
     {
-        public virtual Product Product { get; set; }
+        public virtual Product Product { get; set; } = null!;
         public int ProductId { get; set; }
-        public virtual Language Language { get; set; }
+        public virtual Language Language { get; set; } = null!;
         public int LanguageId { get; set; }
     }
 }

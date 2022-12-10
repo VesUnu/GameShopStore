@@ -9,20 +9,20 @@ namespace GameShopStore.Core.Dtos.AddressDtos
 {
     public class UserAddressListDto
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
-        public string Surname { get; set; }
+        public string Surname { get; set; } = null!;
 
-        public string Street { get; set; }
+        public string Street { get; set; } = null!;
 
-        public string PostCode { get; set; }
+        public string PostCode { get; set; } = null!;
 
-        public string Phone { get; set; }
+        public string Phone { get; set; } = null!;
 
-        public string Email { get; set; }
+        public string Email { get; set; } = null!;
 
-        public string City { get; set; }
+        public string City { get; set; } = null!;
 
-        public string Country { get; set; }
+        public string Country { get; set; } = null!;
     }
 }

@@ -8,13 +8,13 @@ namespace GameShopStore.Application.Helpers
 {
     public class SeedDataLocationOpts
     {
-        public const string SeedDataLoc = "SeedDataLocation";
+        public const string SeedDataLocation = "SeedDataLocation";
 
-        public string PhotoSeedData { get; set; }
-        public string ProductSeedData { get; set; }
-        public string RequirementsSeedData { get; set; }
-        public string SubCategorySeedData { get; set; }
-        public string UserSeedData { get; set; }
-        public string DeliveryOptSeedData { get; set; }
+        public string PhotoSeedData { get; set; } = null!;
+        public string ProductSeedData { get; set; } = null!;
+        public string RequirementsSeedData { get; set; } = null!;
+        public string SubCategorySeedData { get; set; } = null!;
+        public string UserSeedData { get; set; } = null!;
+        public string DeliveryOptSeedData { get; set; } = null!;
     }
 }

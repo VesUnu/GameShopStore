@@ -10,12 +10,12 @@ namespace GameShopStore.Core.Dtos.RequirementsDtos
     public class CreationRequirementsDto
     {
         [StringLength(30)]
-        public string OS { get; set; }
+        public string OS { get; set; } = null!;
         [StringLength(100)]
-        public string Processor { get; set; }
+        public string Processor { get; set; } = null!;
         public byte RAM { get; set; }
         [StringLength(100)]
-        public string GraphicsCard { get; set; }
+        public string GraphicsCard { get; set; } = null!;
         public ushort HDD { get; set; }
         public bool IsNetworkConnectionRequire { get; set; }
     }

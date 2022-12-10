@@ -9,8 +9,8 @@ namespace GameShopStore.Core.Dtos.ProductDtos
     public class ProductStockModerationDto
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string CategoryName { get; set; }
+        public string Name { get; set; } = null!;
+        public string CategoryName { get; set; } = null!;
         public int StockQuantity { get; set; }
     }
 }

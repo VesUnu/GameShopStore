@@ -15,14 +15,13 @@ namespace GameShopStore.Infrastructure.Extensions
     {
         public static void SeedProducts(this ModelBuilder modelBuilder, IConfiguration appSettings)
         {
-            var seedDataLocationOptions = appSettings.GetSection(SeedDataLocationOpts.SeedDataLoc).Get<SeedDataLocationOpts>();
+            var seedDataLocationOptions = appSettings.GetSection(SeedDataLocationOpts.SeedDataLocation).Get<SeedDataLocationOpts>();
             string productSeedDataLocation = seedDataLocationOptions.ProductSeedData;
 
 
             var currDirectory = Directory.GetCurrentDirectory();
 
             List<Product> products = ModelBuilderExtension.GetSeedDataOf<Product>(currDirectory, productSeedDataLocation);
-
 
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "PC", Description = "PC Description" },

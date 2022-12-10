@@ -12,10 +12,10 @@ namespace GameShopStore.Core.Dtos.ProductDtos
     {
         [Required]
         [StringLength(50)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         [Required]
         [StringLength(2000)]
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
         [Required]
         public byte Pegi { get; set; }
         [Required]
@@ -26,12 +26,12 @@ namespace GameShopStore.Core.Dtos.ProductDtos
         [Required]
         public DateTime ReleaseDate { get; set; }
         [Required]
-        public EditingRequirementsDto Requirements { get; set; }
+        public EditingRequirementsDto Requirements { get; set; } = null!;
         [Required]
         public int CategoryId { get; set; }
         [Required]
-        public int[] LanguagesId { get; set; }
+        public int[] LanguagesId { get; set; } = null!;
         [Required]
-        public int[] SubCategoriesId { get; set; }
+        public int[] SubCategoriesId { get; set; } = null!;
     }
 }

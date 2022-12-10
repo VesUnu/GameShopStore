@@ -8,6 +8,6 @@ namespace GameShopStore.Core.Dtos.UserDtos
 {
     public class EditingRoleDto
     {
-        public string[] RoleNames { get; set; }
+        public string[] RoleNames { get; set; } = null!;
     }
 }

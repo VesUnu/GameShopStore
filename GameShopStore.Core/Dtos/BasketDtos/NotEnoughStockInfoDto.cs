@@ -10,6 +10,6 @@ namespace GameShopStore.Core.Dtos.BasketDtos
     {
         public int StockId { get; set; }
         public int AvailableStockQty { get; set; }
-        public string ProductName { get; set; }
+        public string ProductName { get; set; } = null!;
     }
 }

@@ -9,11 +9,11 @@ namespace GameShopStore.Core.Dtos.UserDtos
 {
     public class UserAccInfoDto
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
+        public string Name { get; set; } = null!;
+        public string Surname { get; set; } = null!;
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = null!;
         [Phone]
-        public string PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; } = null!;
     }
 }

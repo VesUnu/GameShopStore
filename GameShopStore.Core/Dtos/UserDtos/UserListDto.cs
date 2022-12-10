@@ -9,7 +9,7 @@ namespace GameShopStore.Core.Dtos.UserDtos
     public class UserListDto
     {
         public int Id { get; set; }
-        public string UserName { get; set; }
-        public ICollection<string> Roles { get; set; }
+        public string UserName { get; set; } = null!;
+        public ICollection<string> Roles { get; set; } = null!;
     }
 }

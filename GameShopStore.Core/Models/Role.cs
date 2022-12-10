@@ -9,6 +9,6 @@ namespace GameShopStore.Core.Models
 {
     public class Role : IdentityRole<int>
     {
-        public virtual ICollection<UserRole> UserRoles { get; set; }
+        public virtual ICollection<UserRole> UserRoles { get; set; } = null!;
     }
 }

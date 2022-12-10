@@ -9,18 +9,18 @@ namespace GameShopStore.Core.Models
     public class Product
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string Name { get; set; } = null!;
+        public string Description { get; set; } = null!;
         public byte Pegi { get; set; }
         public decimal Price { get; set; }
         public bool IsDigitalMedia { get; set; }
         public DateTime ReleaseDate { get; set; }
 
-        public virtual Requirements Requirements { get; set; }
-        public virtual Category Category { get; set; }
-        public virtual ICollection<ProductLanguage> Languages { get; set; }
-        public virtual ICollection<ProductSubCategory> SubCategories { get; set; }
-        public virtual ICollection<Picture> Pictures { get; set; }
-        public Stock Stock { get; set; }
+        public virtual Requirements Requirements { get; set; } = null!;
+        public virtual Category Category { get; set; } = null!;
+        public virtual ICollection<ProductLanguage> Languages { get; set; } = null!;
+        public virtual ICollection<ProductSubCategory> SubCategories { get; set; } = null!;
+        public virtual ICollection<Picture> Pictures { get; set; } = null!;
+        public Stock Stock { get; set; } = null!;
     }
 }

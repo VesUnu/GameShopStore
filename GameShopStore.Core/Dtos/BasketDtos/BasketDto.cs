@@ -10,6 +10,6 @@ namespace GameShopStore.Core.Dtos.BasketDtos
     public class BasketDto
     {
         public decimal PriceBasket { get; set; }
-        public List<StockProductBasketDto> ProdcutsBasket { get; set; }
+        public List<StockProductBasketDto> ProdcutsBasket { get; set; } = null!;
     }
 }

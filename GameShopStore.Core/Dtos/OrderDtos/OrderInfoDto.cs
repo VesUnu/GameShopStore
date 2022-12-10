@@ -12,35 +12,35 @@ namespace GameShopStore.Core.Dtos.OrderDtos
     {
         [Required]
         [StringLength(30)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
 
         [Required]
         [StringLength(30)]
-        public string Surname { get; set; }
+        public string Surname { get; set; } = null!;
 
         [Required]
         [StringLength(80)]
-        public string Street { get; set; }
+        public string Street { get; set; } = null!;
 
         [Required]
         [StringLength(12)]
-        public string PostCode { get; set; }
+        public string PostCode { get; set; } = null!;
 
         [Required]
         [Phone]
-        public string Phone { get; set; }
+        public string Phone { get; set; } = null!;
 
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = null!;
 
         [StringLength(40)]
-        public string City { get; set; }
+        public string City { get; set; } = null!;
 
         [StringLength(40)]
-        public string Country { get; set; }
+        public string Country { get; set; } = null!;
 
         [DeliveryType("DHL", "SPEEDY", "FedEx", "Econt")]
-        public string DeliveryType { get; set; }
+        public string DeliveryType { get; set; } = null!;
     }
 }

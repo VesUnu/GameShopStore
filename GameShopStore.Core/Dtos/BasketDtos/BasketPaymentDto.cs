@@ -9,7 +9,7 @@ namespace GameShopStore.Core.Dtos.BasketDtos
     public class BasketPaymentDto
     {
         public decimal BasketPrice { get; set; }
-        public string StripeRef { get; set; }
-        public List<ProductFromBasketCookieDto> ProductsBasket { get; set; }
+        public string StripeRef { get; set; } = null!;
+        public List<ProductFromBasketCookieDto> ProductsBasket { get; set; } = null!;
     }
 }

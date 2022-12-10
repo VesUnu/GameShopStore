@@ -9,6 +9,6 @@ namespace GameShopStore.Core.Dtos.LanguageDtos
     public class ReturnLanguagesDto
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
     }
 }

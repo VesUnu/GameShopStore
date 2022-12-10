@@ -7,9 +7,9 @@ namespace GameShopStore.Core.Dtos.ProductDtos
     public class EditingProductDto
     {
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         [Required]
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
         [Required]
         public byte Pegi { get; set; }
         [Required]
@@ -19,13 +19,13 @@ namespace GameShopStore.Core.Dtos.ProductDtos
         [Required]
         public DateTime ReleaseDate { get; set; }
         [Required]
-        public EditingRequirementsDto Requirements { get; set; }
+        public EditingRequirementsDto Requirements { get; set; } = null!;
         [Required]
         public int CategoryId { get; set; }
 
-        public ICollection<int> LanguagesId { get; set; }
-        public ICollection<int> SubCategoriesId { get; set; }
+        public ICollection<int> LanguagesId { get; set; } = null!;
+        public ICollection<int> SubCategoriesId { get; set; } = null!;
 
-        public ICollection<Picture> Pictures { get; set; }
+        public ICollection<Picture> Pictures { get; set; } = null!;
     }
 }

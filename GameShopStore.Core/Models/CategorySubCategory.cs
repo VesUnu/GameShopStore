@@ -8,9 +8,9 @@ namespace GameShopStore.Core.Models
 {
     public class CategorySubCategory
     {
-        public virtual Category Category { get; set; }
+        public virtual Category Category { get; set; } = null!;
         public int CategoryId { get; set; }
-        public virtual SubCategory SubCategory { get; set; }
+        public virtual SubCategory SubCategory { get; set; } = null!;
         public int SubCategoryId { get; set; }
     }
 }

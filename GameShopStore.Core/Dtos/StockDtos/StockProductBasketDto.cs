@@ -12,8 +12,8 @@ namespace GameShopStore.Core.Dtos.StockDtos
         public int ProductId { get; set; }
         public int StockId { get; set; }
         public int StockQty { get; set; }
-        public string Name { get; set; }
-        public string CategoryName { get; set; }
+        public string Name { get; set; } = null!;
+        public string CategoryName { get; set; } = null!;
         public decimal Price { get; set; }
     }
 }

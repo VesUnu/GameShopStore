@@ -10,10 +10,10 @@ namespace GameShopStore.Core.Models
     {
         public int Id { get; set; }
         public int StockId { get; set; }
-        public Stock Stock { get; set; }
+        public Stock Stock { get; set; } = null!;
         public int StockQty { get; set; }
         public DateTime ExpireTime { get; set; }
-        public string SessionId { get; set; }
+        public string SessionId { get; set; } = null!;
         public int ProductId { get; set; }
     }
 }

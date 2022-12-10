@@ -19,7 +19,7 @@ namespace GameShopStore.Infrastructure
             _appDbCtx = appDbCtx;
         }
 
-        private IRequirementsRepo _requirements;
+        private IRequirementsRepo _requirements = null!;
         public IRequirementsRepo Requirements
         {
             get
@@ -33,7 +33,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private ICategoryRepo _category;
+        private ICategoryRepo _category = null!;
         public ICategoryRepo Category
         {
             get
@@ -46,7 +46,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private ISubCategoryRepo _subCategory;
+        private ISubCategoryRepo _subCategory = null!;
         public ISubCategoryRepo SubCategory
         {
             get
@@ -59,7 +59,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private ILanguageRepo _language;
+        private ILanguageRepo _language = null!;
         public ILanguageRepo Language 
         {
             get
@@ -73,7 +73,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IPictureRepo _picture;
+        private IPictureRepo _picture = null!;
         public IPictureRepo Picture 
         {
             get
@@ -87,7 +87,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IUserRepo _user;
+        private IUserRepo _user = null!;
         public IUserRepo User 
         {
             get
@@ -100,7 +100,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IProductRepo _product;
+        private IProductRepo _product = null!;
         public IProductRepo Product 
         {
             get
@@ -113,7 +113,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IStockRepo _stock;
+        private IStockRepo _stock = null!;
         public IStockRepo Stock 
         {
             get
@@ -126,7 +126,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IOrderRepo _order;
+        private IOrderRepo _order = null!;
         public IOrderRepo Order 
         {
             get
@@ -139,7 +139,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IStockOnHoldRepo _stockOnHold;
+        private IStockOnHoldRepo _stockOnHold = null!;
         public IStockOnHoldRepo StockOnHold 
         {
             get
@@ -152,7 +152,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IAddressRepo _address;
+        private IAddressRepo _address = null!;
         public IAddressRepo Address 
         {
             get
@@ -165,7 +165,7 @@ namespace GameShopStore.Infrastructure
             }
         }
 
-        private IDeliveryRepo _deliveryOpt;
+        private IDeliveryRepo _deliveryOpt = null!;
         public IDeliveryRepo DeliveryOpt 
         {
             get

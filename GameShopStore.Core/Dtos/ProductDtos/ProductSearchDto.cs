@@ -10,9 +10,9 @@ namespace GameShopStore.Core.Dtos.ProductDtos
     public class ProductSearchDto
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         public decimal Price { get; set; }
-        public Picture Picture { get; set; }
-        public string CategoryName { get; set; }
+        public Picture Picture { get; set; } = null!;
+        public string CategoryName { get; set; } = null!;
     }
 }

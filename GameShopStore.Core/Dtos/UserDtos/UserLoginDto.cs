@@ -11,9 +11,9 @@ namespace GameShopStore.Core.Dtos.UserDtos
     {
         [Required]
         [StringLength(10, MinimumLength = 4, ErrorMessage = "Password must be between 4 and 10 characters.")]
-        public string Password { get; set; }
+        public string Password { get; set; } = null!;
         [Required]
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = null!;
     }
 }

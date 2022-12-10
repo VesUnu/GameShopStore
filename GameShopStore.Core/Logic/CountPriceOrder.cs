@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GameShopStore.Core.Logic
 {
-    public class CountPriceOrder
+    public class CountPriceOrder : ICountOrderPrice
     {
         public decimal Do<T>(List<T> productsForBasketDto) where T : IOrderLogisticInfo
         {
