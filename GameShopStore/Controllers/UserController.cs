@@ -70,7 +70,7 @@ namespace GameShopStore.Controllers
 
             if (!result.Succeeded)
             {
-                return BadRequest("Oops, something went wrong during editing User account informations");
+                return BadRequest("Oops, something went wrong during editing the User account information");
             }
 
 
