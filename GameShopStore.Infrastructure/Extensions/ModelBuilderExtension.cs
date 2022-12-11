@@ -132,7 +132,7 @@ namespace GameShopStore.Infrastructure.Extensions
 
 
 
-            string photoSeedDataLocation = seedDataLocationOptions.PhotoSeedData;
+            string photoSeedDataLocation = seedDataLocationOptions.PictureSeedData;
             List<Picture> photos = ModelBuilderExtension.GetSeedDataOf<Picture>(currDirectory, photoSeedDataLocation);
 
             modelBuilder.Entity<Picture>().HasData(photos);

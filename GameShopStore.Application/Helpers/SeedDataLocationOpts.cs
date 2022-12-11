@@ -10,7 +10,7 @@ namespace GameShopStore.Application.Helpers
     {
         public const string SeedDataLocation = "SeedDataLocation";
 
-        public string PhotoSeedData { get; set; } = null!;
+        public string PictureSeedData { get; set; } = null!;
         public string ProductSeedData { get; set; } = null!;
         public string RequirementsSeedData { get; set; } = null!;
         public string SubCategorySeedData { get; set; } = null!;

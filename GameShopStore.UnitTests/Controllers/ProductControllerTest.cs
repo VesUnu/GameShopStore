@@ -29,7 +29,7 @@ namespace GameShopStore.UnitTests.Controllers
 
             var defaultProductParams = new ProductParameters();
 
-            var productsForSearchingDto = DataForTests.Data.ProductForSearchingDto();
+            var productsForSearchingDto = DataTests.Data.ProductSearchDto();
 
             int pageNumber = defaultProductParams.PageNumber;
 

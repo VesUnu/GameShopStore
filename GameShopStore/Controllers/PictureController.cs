@@ -36,6 +36,11 @@ namespace GameShopStore.Controllers
             _addPictureToCloud = addPictureToCloud;
         }
 
+        public PictureController(IMapper mapper, IOptions<CloudinarySettings> cloudinaryConfig, IUnitOfWork object1, IAddPictureToCloud object2)
+        {
+
+        }
+
         [HttpGet("id", Name = "GetPicture")]
         [AllowAnonymous]
         public async Task<IActionResult> GetPhoto(int id)
